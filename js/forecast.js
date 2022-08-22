@@ -82,11 +82,11 @@ function forecast_render() {
                 if(platform_c === 'y') {
                     sicon = 'icon-youtube'
                     //Youtube live, the URL can use this if it is not provided.
-                    y_url = "https://www.youtube.com/channel/UCyIcOCH-VWaRKH9IkR8hz7Q/live";
+                    y_url = "https://www.youtube.com/user/bambinoonico/live";
                 } else if(platform_c === 'b') {
                     sicon = 'icon-bilibili';
                     //Bilibili live, the URL is fixed.
-                    b_url = "https://live.bilibili.com/21547895";
+                    b_url = "https://live.bilibili.com/15152878";
                 } else if (platform_c === 'f') {
                     sicon = 'icon-fanbox';
                 }
@@ -150,7 +150,7 @@ function forecast_load_data(forecast_data) {
             //Check the platform.
             if(forecast_data[i].platform === "f") {
                 //FANBOX live, the URL uses FANBOX page instead.
-                forecast_data[i].url = "https://www.fanbox.cc/@hanamaruhareru";
+                forecast_data[i].url = "https://kano-official.amebaownd.com/";
             }
         }
         valid_forecast.push(forecast_data[i]);
